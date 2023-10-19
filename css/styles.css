@@ -42,7 +42,6 @@ a {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-  border-bottom: 1px solid transparent;
 }
 
 a,
@@ -63,17 +62,6 @@ button:hover {
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
-}
-
-a:hover {
-  border-color: #f49867;
-}
-
-.cta_buttons a:hover {
-  color: none;
-  text-decoration: none;
-  border-color: none;
-  border: none;
 }
 
 button:hover {
@@ -580,6 +568,14 @@ p {
   margin-top: 6.7rem;
 }
 
+.blog .blog__news__group a {
+  border-bottom: 1px solid transparent;
+}
+
+.blog .blog__news__group a:hover {
+  border-bottom: 1px solid #fff;
+}
+
 .blog .blog__news__group .group__left {
   display: flex;
   flex-direction: column;
@@ -593,6 +589,10 @@ p {
 }
 
 .blog .blog__news__group .group__left .left__container .container__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-top: 2.1rem;
   margin-left: 1.6rem;
 }
@@ -636,6 +636,10 @@ h5 {
 }
 
 .blog .blog__news__group .group__right .right__article .article__container .container__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-top: 0.8rem;
   margin-left: 1.6rem;
 }
@@ -671,7 +675,6 @@ h5 {
   text-align: center;
   width: 54rem;
   margin-top: 10.9rem;
-  font-size: 62px;
 }
 
 .footer .footer__button {
@@ -701,6 +704,19 @@ h5 {
   justify-content: space-between;
 }
 
+.footer .footer__container a {
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.footer .footer__container a:hover {
+  border-bottom: 1px solid #fff;
+}
+
 .footer .footer__container .container__logo .logo__text {
   margin-top: 1.5625rem;
   width: 10.5rem;
@@ -722,15 +738,6 @@ h5 {
   color: #FFF;
   font-size: 12px;
   width: fit-content;
-}
-
-.footer .footer__container .container__links a:hover{
-  border-bottom: 1px solid #f49867;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
 }
 
 .special {
@@ -789,8 +796,9 @@ h5 {
 
   .header .header__menu .menu__close {
     position: absolute;
-    right: -100px;
-    top: -100px;
+    cursor: pointer;
+    right: -6.25rem;
+    top: -6.25rem;
   }
 
   .header .header__menu .menu .menu__item a {
@@ -900,6 +908,13 @@ h5 {
 
   h3 {
     font-size: 19px;
+  }
+
+  .header .header__menu .menu__close {
+    position: absolute;
+    cursor: pointer;
+    right: -6.25rem;
+    top: -6.25rem;
   }
 
   .hero_section {
@@ -1031,6 +1046,13 @@ h5 {
     font-size: 19px;
   }
 
+  .header .header__menu .menu__close {
+    position: absolute;
+    cursor: pointer;
+    right: -6.25rem;
+    top: -6.25rem;
+  }
+
   .hero_section .hero_section__left .left__cta_buttons input[type="text"] {
     min-width: auto;
   }
@@ -1125,5 +1147,13 @@ h5 {
 
   .footer .footer__container .container__links .links_link {
     font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header .headermenu .menuclose {
+    position: absolute;
+    right: -100px;
+    top: -100px;
   }
 }
