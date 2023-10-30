@@ -443,7 +443,8 @@ p {
 .possibilities {
   display: flex;
   column-gap: 1.2rem;
-  margin: 3rem 0px 9.7rem
+  margin: 3rem 0px 9.7rem;
+  max-width: 1024px;
 }
 
 .possibilities .possibilities__left img{
