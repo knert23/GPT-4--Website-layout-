@@ -1183,4 +1183,8 @@ h5 {
     margin-bottom: 0.8rem;
     margin-top: 1.5rem;
   }
+
+  .blog .blog__news__group .group__left{
+    width: 24.1rem;
+  }
 }
